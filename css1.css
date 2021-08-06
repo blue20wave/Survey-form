@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: Poppins;
+
+}
+
+body::before{
+/* margin: 0px;
+background-image: url(	https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+background-size: cover;
+background-repeat: no-repeat; */
+content: '';
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+background: var(--color-darkblue);
+background-image: linear-gradient(
+115deg
+, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+/* #img{
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0;
+} */
+#title{
+  margin-top: 5rem;;
+}
+#survey-form{
+  background: rgba(27,27, 50, 0.8);
+  margin: 0 20rem 0 20rem;
+  padding: 2.5rem;
+  /* float: left; */
+}
+.form-group{
+  margin: 0 auto 1.25rem auto;
+
+
+}
+.container{
+  margin: 3.125rem auto 0 auto;
+}
+#name ,#email ,#number {
+  display: block;
+  width: 90%;
+  border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+
+    padding: 0.375rem 0.75rem;
+}
+label{
+  display: block;
+  text-align: left;
+}
+
+  #dropdown , #favorite{
+    width: 90%;
+    display: block;
+
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      color: #495057;
+  }
+  #dropdown-label,#radio-label, #check-label,#text-label{
+    text-align: left;
+  }
+  .input-radio{
+    margin-right: 0.625rem;
+    min-height: 1rem;
+    min-width: 1rem;
+  }
+#comments{
+  width: 90%;
+    height: 6rem;
+    display: block;
+    resize: vertical;
+    padding: 0.5rem;
+    outline: 0;
+}
+.btn{
+  display: block;
+  width: 90%;
+}
+  /* @media (min-width: 768px)
+  .container {
+      max-width: 720px;
+  }
+  @media (min-width: 576px)
+.container {
+    max-width: 540px;
+} */
+@media( max-width:1100px){
+  #survey-form{
+    margin: 0 6rem 0 6rem
+  }
+}
+@media(max-width:767px){
+  #survey-form{
+    background: rgba(27,27, 50, 0.8);
+    margin: 0;
+    padding: 2.5rem;
+    /* float: left; */
+  }
+}
